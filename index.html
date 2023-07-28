@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo-min.svg" type="image/x-icon">
+
+    <title>Rick and Morty</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/logo-min.svg" alt="rick and morty">
+
+            <ul>
+                <li>
+                    <a href="#">Personagens</a>
+                </li>
+                <li>
+                    <a href="#">Localizações</a>
+                </li>
+                <li>
+                    <a href="#">Episódios</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="chars">
+                <img src="./img/logo.svg" alt="Rick And Morty names">
+
+                <div class="filters">
+                    <input type="text" id="search" placeholder="Filter by name..." class="filter">
+                    <select name="species" id="species" class="filter">
+                        <option value="" default>
+                            Species
+                        </option>
+                        <option value="animal">Animal</option>
+                        <option value="alien">Alien</option>
+                        <option value="disease">Doença</option>
+                        <option value="unknown">Desconhecido</option>
+                        <option value="human">Humano</option>
+                        <option value="humanoid">Humanoide</option>
+                        <option value="mythological">Mitologico</option>
+                        <option value="poopybutthole">Poopybutthole</option>
+                        <option value="robot">Robo</option>
+                    </select>
+                    <select name="gender" id="gender" class="filter">
+                        <option value="">
+                            Genero
+                        </option>
+                        <option value="female">Feminino</option>
+                        <option value="male">Masculino</option>
+                        <option value="genderless">Sem Genero</option>
+                        <option value="unknown">Desconhecido</option>
+                    </select>
+                    <select name="status" id="status" class="filter">
+                        <option value="">
+                            Status
+                        </option>
+                        <option value="alive">Vivo</option>
+                        <option value="dead">Morto</option>
+                        <option value="unknown">Desconhecido</option>
+                    </select>
+                </div>
+
+                <div class="chars-container">
+
+                </div>
+
+                <button id="load-more">
+                    Carregar mais
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
