@@ -22,6 +22,7 @@ async function getCharacters({ name, species, gender, status, page = 1 }) {
   );
 
   const characters = await response.json();
+  
 
   return characters.results;
 }
